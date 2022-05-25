@@ -38,10 +38,29 @@
                         <a href='povesti-de-succes.php' class="nav-link hide-desk">Povești de succes</a>
                     </li>
                     <li class="nav-item lg-not lg-yes mr20">
+                        
+                        <?php 
+                        
+                        if ( !isset($_COOKIE['user']) ) {
+                        
+                        ?>                    
                         <a href='login-register.php' class="nav-link not">Register / Login</a>
+                        <?php } else { ?>
+                        <a href='cont.php' class="nav-link not">Contul Meu</a>
+                        <?php }?>
                     </li>
                     <li class="nav-item lg-not lg-yes row">
+                        <?php 
+                        
+                        if ( !isset($_COOKIE['user']) ) {
+                        
+                        ?>                    
+                        <a href='login-register.php' class="nav-link not row blue-btn white-color phone">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
+
+                        <?php } else { ?>
                         <a href='depune-ideea.php' class="nav-link not row blue-btn white-color phone">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
+                        <?php }?>
+
                     </li>
                 </div>
             </ul>

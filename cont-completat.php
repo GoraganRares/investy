@@ -1,5 +1,6 @@
 <?php require_once "design/dependecies.php"; ?>
 <title>Investy - Cont</title>
+<script src="static/js/account.js"></script>
 <body>
 <?php require_once "design/nav.php"; ?>
 
@@ -38,7 +39,7 @@
                         <div class="section-cont date-profil active width100 row date-cont-pop">
                             <div class='column-left width100'>
                                 <?php require_once "design/others/judete.php"; ?>
-                                <textarea type="text" name="email" placeholder="Adresă" class="margin20 login-input" required></textarea>
+                                <textarea type="text" name="adresa" placeholder="Adresă" class="margin20 login-input" required></textarea>
                                 <h3 class="description margin10">Adaugă limbile vorbite</h3>
                                 <div class="limba-box-all width100">
                                     <div class="limba-container margin20 row relative">
@@ -93,7 +94,7 @@
                                         <img class='icon delete-experienta' src="./static/content/icons/delete.svg" alt="delete">
                                     </div>
                                 </div>
-                                <button class="blue-btn">Salvează</button>
+                                <button id="update_profile" class="blue-btn">Salvează</button>
                             </div>
                             <div class='column width100'>
                                 <div class="box-img margin20">

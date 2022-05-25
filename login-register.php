@@ -1,5 +1,7 @@
 <?php require_once "design/dependecies.php"; ?>
 <title>Investy - Login</title>
+<script src="static/js/account.js"></script>
+
 <body class="login-register-page">
 <?php require_once "design/nav.php"; ?>
 <section class="login login-box padding-all flex row section-block">
