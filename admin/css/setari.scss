@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+body {
+
+    background-color: #EBF5FF;
+
+}
+
+div {
+
+    float: left;
+    box-sizing: border-box;
+
+}
+
+#wrapper {
+
+    padding: 50px;
+    width: 100%;
+
+}
+
+.setari {
+
+    width: 40%;
+
+    h2 {
+
+        color: #00234A;
+        font-family: Poppins;
+        font-size: 24px;
+
+    }
+
+    input {
+
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        border-radius: 34px;
+        border: 3px solid #0080FF;
+        background: transparent;
+        font-size: 19px;
+
+    }
+
+    #salveza {
+
+        width: 100%;
+        background: #0080FF;
+        border-radius: 34px;
+        text-align: center;
+        font-size: 19px;
+        color: #fff;
+        font-family: Poppins;
+        padding: 10px;
+        cursor: pointer;
+
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+    #wrapper {
+
+        padding: 25px;
+
+    }
+
+    .tabel {
+
+        .header, .row {
+
+            padding: 28px 10px;
+    
+        }
+
+        * {
+
+            font-size: 16px;
+
+        }
+
+        .header {
+
+            a {
+
+                font-size: 13px;
+
+            }
+
+        }
+
+        .row {
+
+            .blue_btn {
+
+                width: 35px;
+                height: 35px;
+
+                img {
+
+                    width: 20px;
+                    padding: 15px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .setari {width: 60%;}
+}  

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+body {
+
+    background-color: #EBF5FF;
+
+}
+
+div {
+
+    float: left;
+    box-sizing: border-box;
+
+}
+
+#wrapper {
+
+    padding: 50px;
+
+}
+
+.tabel {
+
+    .header, .row {
+
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px 40px;
+        width: 100%;
+
+    }
+
+    * {
+
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 21px;
+
+    }
+
+    .header {
+
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
+        justify-content: space-between;
+
+        a {
+
+            font-weight: 600;
+            font-size: 16px;
+            color: #0080FF;
+
+        }
+
+        h3 {
+
+            margin: 0;
+
+        }
+
+    }
+
+    .row {
+
+        border-bottom: 2px solid #DEDEDE;
+
+        .blue_btn {
+
+            background-color: #0080FF;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+            transition: .3s ease-out;
+
+            img {
+
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: .3s ease-out;
+                padding: 15px;
+
+            }
+
+            &:hover {
+
+                background-color: #00234A;
+
+                img {
+
+                    transform: translate(-50%, -50%) rotate(30deg);
+
+                }
+
+            }
+
+        }
+
+        .green_btn {
+
+            position: relative;
+            height: 40px;
+            width: 40px;
+
+            img {
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+
+            }
+
+        }
+
+    }
+
+    .row.flame {
+
+        background-color: #FFFACE;
+
+    }
+
+    .row:last-child {
+
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 28px;
+        border: none;
+
+    }
+
+}
+
+.tabel_idei {
+
+    width: 65%;
+
+    .row {
+
+        div:nth-child(2) {
+
+            width: 20%;
+
+        }
+
+        div:nth-child(3) {
+
+            width: 50%;
+
+        }
+
+        div:nth-child(1) {
+
+            width: 40px;
+            height: 40px;
+
+        }
+
+    }
+
+}
+
+.tabel_investitori {
+
+    width: 30%;
+    float: right;
+
+    .haeder {
+
+        padding: 28px 20px;
+
+    }
+
+    .row {
+
+        padding: 16px 20px;
+
+    }
+
+    .avatar {
+
+        width: 60px;
+
+        img {
+
+            float: left;
+            box-sizing: border-box;
+            width: 100%;
+
+        }
+
+    }
+
+    .name {
+
+        width: 60%;
+        // margin-left: 5%;
+
+    }
+
+}
+
+.tabel_notificari {
+
+    width: 48%;
+    margin-top: 35px;
+
+    .row, .header {
+
+        padding: 15px 10px !important;
+
+    }
+
+}
+
+.tabel_statistici {
+
+    width: 48%;
+    float: right;
+    margin-top: 35px;
+
+    .row, .header {
+
+        padding: 15px 10px !important;
+
+    }
+
+    .row .stats {
+
+        height: 40px;
+
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+
+    #wrapper {
+
+        padding: 25px;
+
+    }
+
+    .tabel {
+
+        .header, .row {
+
+            padding: 28px 10px;
+    
+        }
+
+        * {
+
+            font-size: 16px;
+
+        }
+
+        .header {
+
+            a {
+
+                font-size: 13px;
+
+            }
+
+        }
+
+        .row {
+
+            .blue_btn {
+
+                width: 35px;
+                height: 35px;
+
+                img {
+
+                    width: 20px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .tabel_investitori {
+
+        .avatar {
+
+            width: 40px;
+
+        }
+
+        .row {
+
+            padding: 20px 10px 21px 10px;
+
+        }
+
+    }
+
+    .tabel_statistici .stats {width: 35px}
+
+}

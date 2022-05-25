@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+body {
+  background-color: #EBF5FF;
+}
+
+div {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrapper {
+  padding: 50px;
+  width: 100%;
+}
+
+.tabel .header, .tabel .row {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 28px 40px;
+  width: 100%;
+}
+
+.tabel * {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 21px;
+}
+
+.tabel .header {
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabel .header a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0080FF;
+}
+
+.tabel .header h3 {
+  margin: 0;
+}
+
+.tabel .blue_btn {
+  background-color: #0080FF;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.tabel .blue_btn img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  padding: 15px;
+}
+
+.tabel .blue_btn:hover {
+  background-color: #00234A;
+}
+
+.tabel .blue_btn:hover img {
+  -webkit-transform: translate(-50%, -50%) rotate(30deg);
+          transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.tabel .green_btn {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.tabel .green_btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.tabel .row {
+  border-bottom: 2px solid #DEDEDE;
+}
+
+.tabel .row:last-child {
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border: none;
+}
+
+.tabel_profil {
+  width: 100%;
+}
+
+.tabel_profil .header {
+  border-bottom: 2px solid #DEDEDE;
+}
+
+.tabel_profil .header .green_btn img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.tabel_profil .header div:last-child div {
+  margin: 0 10px;
+}
+
+.tabel_profil .header div:last-child div:last-child {
+  margin-right: 0;
+}
+
+.tabel_profil .row {
+  display: block;
+  padding: 28px 150px;
+}
+
+.tabel_profil .row .left, .tabel_profil .row .right {
+  width: 50%;
+}
+
+.tabel_profil .row .left h3, .tabel_profil .row .left h4 {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.tabel_profil .row .left .input {
+  border: 3px solid #0080FF;
+  width: 100%;
+  border-radius: 34px;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  color: #00234A;
+  white-space: normal;
+  padding: 10px;
+}
+
+.tabel_profil .row .left .limbi {
+  width: unset;
+  padding: 10px 50px;
+  margin-right: 20px;
+}
+
+.tabel_profil .row .left .textarea {
+  border: 3px solid #0080FF;
+  width: 100%;
+  border-radius: 34px;
+  margin: 0 0 20px 0;
+  min-height: 150px;
+  padding: 10px;
+  white-space: normal;
+}
+
+.tabel_profil .row .left .textarea span {
+  color: #0080FF;
+  font-size: 14px;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.tabel_profil .row .left .hobby {
+  width: 100%;
+  float: left;
+  color: #0080FF;
+  font-size: 19px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.tabel_profil .row .right .avatar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabel_profil .row .right .avatar img {
+  width: 250px;
+}
+
+@media (max-width: 1400px) {
+  .tabel_profil .row {
+    padding: 28px 60px;
+  }
+}
+/*# sourceMappingURL=profil.css.map */

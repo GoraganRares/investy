@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+body {
+  background-color: #EBF5FF;
+}
+
+div {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrapper {
+  padding: 50px;
+  width: 100%;
+}
+
+.tabel .header, .tabel .row {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 28px 40px;
+  width: 100%;
+}
+
+.tabel * {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 21px;
+}
+
+.tabel .header {
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabel .header a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0080FF;
+}
+
+.tabel .header h3 {
+  margin: 0;
+}
+
+.tabel .row {
+  border-bottom: 2px solid #DEDEDE;
+}
+
+.tabel .row .blue_btn {
+  background-color: #0080FF;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.tabel .row .blue_btn img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  padding: 15px;
+}
+
+.tabel .row .blue_btn:hover {
+  background-color: #00234A;
+}
+
+.tabel .row .blue_btn:hover img {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.tabel .row:last-child {
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border: none;
+}
+
+.tabel_notificari {
+  width: 70%;
+}
+
+.tabel_notificari .row div:nth-child(2) {
+  width: 30%;
+}
+
+.tabel_notificari .row div:nth-child(3) {
+  width: 20%;
+}
+
+.tabel_notificari .row div:nth-child(4) {
+  width: 20%;
+}
+
+.tabel_notificari .row .avatar {
+  width: 60px;
+}
+
+@media (max-width: 1600px) {
+  #wrapper {
+    padding: 25px;
+  }
+  .tabel .header, .tabel .row {
+    padding: 28px 10px;
+  }
+  .tabel * {
+    font-size: 16px;
+  }
+  .tabel .header a {
+    font-size: 13px;
+  }
+  .tabel .row .blue_btn {
+    width: 35px;
+    height: 35px;
+  }
+  .tabel .row .blue_btn img {
+    width: 20px;
+  }
+  .tabel_notificari {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=investitori.css.map */
