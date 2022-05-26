@@ -5,7 +5,7 @@
 <section class="depune not-fullscreen flex column header-element">
     <div class="first column width100">
         <h1 class="title margin40">Depune ideea de afacere</h1>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div class='bulet on'>1
                     <div class="line-mid"></div>
@@ -35,19 +35,20 @@
         <div class="column-left margin30">
             <h4 class='sub-title'>În ce stadiu este afacerea ta?</h4>
             <label class="container"><span class="sub-title description input-span">Am doar ideea, urmează să încep afacerea</span>
-                <input class='radio' type="radio" name="termeni">
+                <input class='radio' class='am-ideea' type="radio" name="termeni">
                 <span class="checkmark"></span>
             </label>
             <label class="container"><span class="sub-title description input-span">Am început afacerea și vreau să o dezvolt</span>
-                <input class='radio' type="radio" name="termeni">
+                <input class='radio' class='am-ideea' type="radio" name="termeni">
                 <span class="checkmark"></span>
             </label>
         </div>
+        <div class="error-1 with100"></div>
         <buton class="blue-btn continue-btn">Continuă</buton>
     </div>
     <div class="second step column width100">
     <h2 class="title margin40">Depunde ideea de afacere</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -74,6 +75,7 @@
             <textarea id='vanzari' type="text" name="email" placeholder="Care sunt canalele de vânzare potrivite?" class="login-input margin30" required></textarea>
             <textarea id='structura' type="text" name="email" placeholder="Adaugă structura costurilor" class="login-input margin30" required></textarea>
             <textarea id='strucura-vanzarilor' type="text" name="email" placeholder="Adaugă structura vânzărilor" class="login-input margin30" required></textarea>
+        <div class="error-2 with100"></div>
         <div class="row">
             <button class="blue-btn mr20 back-first dark">Înapoi</button>
             <buton class="blue-btn third-btn">Continuă</buton>
@@ -81,7 +83,7 @@
     </div>
     <div class="third step column width100">
     <h2 class="title margin40">Depunde ideea de afacere</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -102,6 +104,7 @@
                 <div class="line-oriz"></div>
             </div>
         </div>
+        <div class="error-3 with100"></div>
         <div class="row">
             <div class="column-left">
                 <h3 class="title margin20">Ieși în evidență în fața investitorilor!</h3>
@@ -114,7 +117,7 @@
     </div>
     <div class="four step column width100">
     <h2 class="title margin40">Depunde ideea de afacere</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -139,10 +142,9 @@
             <h2 class="title margin30">Felicitări, proiectul tău <span class="blue-color">a fost depus cu succes</span></h2>
             <h3 class="sub-title margin50">Te vom anunța cu privire la răspunsul investitorilor</h3>
         </div>
-        <div class="error with100"></div>
-<div class="box-nav row">
-            <a href='depune-ideea.php' class="nav-link not mr20 row blue-btn">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
-            <a href='cont-completat.php' class="blue-btn continue-third dark">Contul meu</a>
+        <div class="box-nav width100 row">
+            <a href='depune-ideea.php' class="nav-link not big-text mr20 row blue-btn">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
+            <a href='cont-completat.php' class="blue-btn big-text continue-third dark">Contul meu</a>
         </div>
     </div>
 </section>
@@ -192,8 +194,8 @@ $(document).ready(function(){
 
 $('.continue-btn').click(function() {
     // if ($('#judete').val() == 0 && $('#oras').val() == 0 && $('#adresa').val().length === 0) {input-hobby
-    if ($('#suma').val() == 0 || $('#idee').val() == 0 || $('#investiti').val() == 0) {
-        $('.error').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
+    if ($('.am-ideea').is(':checked') || $('#suma').val() == 0 || $('#idee').val() == 0 || $('#investiti').val() == 0) {
+        $('.error-1').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
     } else {
         $(".first").hide();
         $(".second").css('display', 'flex');
@@ -203,7 +205,7 @@ $('.continue-btn').click(function() {
 $('.third-btn').click(function() {
     // if ($('#judete').val() == 0 && $('#oras').val() == 0 && $('#adresa').val().length === 0) {input-hobby
     if ($('#cheie').val() == 0 || $('#parteneri').val() == 0 || $('#resurse').val() == 0 || $('#vanzari').val() == 0 || $('#structura').val() == 0 || $('#strucura-vanzarilor').val() == 0) {
-        $('.error').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
+        $('.error-2').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
     } else {
         $(".second").hide();
         $(".third").css('display', 'flex');
@@ -213,7 +215,7 @@ $('.third-btn').click(function() {
 $('.payment-check').click(function() {
     // if ($('#judete').val() == 0 && $('#oras').val() == 0 && $('#adresa').val().length === 0) {input-hobby
     if ($('#card-number').val() == 0 || $('#cvv').val() == 0 || $('#data-expirare').val() == 0 || $('#nume-posesor').val() == 0 ) {
-        $('.error').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
+        $('.error-3').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
     } else {
         $(".popup.payment").removeClass("show");
         $(".third").hide();

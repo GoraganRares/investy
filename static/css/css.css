@@ -1420,7 +1420,7 @@ svg.icons path {
 
 .depune .line-mid {
   position: absolute;
-  left: 158px;
+  left: 154px;
   top: 50%;
   width: 220px;
   height: 2px;
@@ -1472,7 +1472,7 @@ svg.icons path {
 }
 
 .depune .box-entire {
-  height: 70vh;
+  min-height: 70vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1532,6 +1532,7 @@ svg.icons path {
 
 .popup .popup-box .login-input {
   max-width: none;
+  width: 100% !important;
 }
 
 .popup.element {
@@ -2287,6 +2288,144 @@ svg.icons path {
   }
   .box-subtitle {
     margin-bottom: 40px;
+  }
+  .sub-title {
+    font-size: 15px;
+  }
+  .depune {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .depune.header-element.not-fullscreen {
+    padding-top: 180px;
+  }
+  .depune .title {
+    font-size: 18px;
+  }
+  .bulet-container .bulet {
+    font-size: 13px;
+    width: 25px;
+  }
+  .depune .line-mid {
+    width: 70px;
+    left: 70px;
+  }
+  .depune .box-bullet {
+    max-width: 354px;
+  }
+  .depune .blue-btn {
+    padding: 12px 44px;
+    font-size: 15px;
+  }
+  .bulet-container span {
+    font-size: 8px;
+  }
+  .depune .width100 .login-input {
+    font-size: 11px;
+  }
+  .login-input {
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  textarea {
+    padding-top: 10px !important;
+  }
+  textarea.login-input {
+    height: 140px;
+  }
+  .container .sub-title {
+    font-size: 12px;
+  }
+  .limba-container.row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .limba-container .login-input {
+    max-width: 130px !important;
+  }
+  .limba-container .login-input:first-child {
+    margin-right: 20px;
+  }
+  #input-hobby {
+    max-width: 280px;
+  }
+  #input-post {
+    max-width: 230px;
+  }
+  .popup {
+    padding: 20px;
+  }
+  .popup .blue-btn {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+  .popup .login-input {
+    padding: 6px 15px;
+    font-size: 15px;
+  }
+  .popup .popup-box {
+    padding: 100px 20px;
+    width: 100%;
+    padding-right: 52px;
+    border-radius: 37px;
+  }
+  .close-box {
+    top: -40px;
+    width: 110%;
+  }
+  .close {
+    width: 30px;
+  }
+  .save {
+    right: 30px;
+    bottom: 25px;
+  }
+  .remove-icon {
+    right: 0px;
+    width: 30px;
+  }
+  .cont .box-option .section-cont .blue-btn {
+    font-size: 14px;
+    padding: 15px 30px;
+  }
+  .bulet-container .line-oriz.on {
+    width: 50px;
+  }
+  .box-docs h3 {
+    font-size: 13px;
+  }
+  .localitate-box input, .localitate-box select {
+    max-width: 130px !important;
+  }
+  .minw420 {
+    max-width: none;
+    width: 100%;
+  }
+  .margin60 {
+    margin-bottom: 30px;
+  }
+  .box-nav.three {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box-nav.three .big-text {
+    margin-bottom: 20px;
+  }
+  .box-nav .big-text {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+  .complete-profile .box.phone-cont .row .description {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .depune .line-mid.one {
+    width: 130px !important;
+    left: 100px !important;
   }
   .footer-slogan {
     padding-left: 0px;

@@ -5,7 +5,7 @@
 <section class="depune not-fullscreen flex column header-element">
     <div class="first column width100">
         <h1 class="title margin40">Viziune și strategie</h1>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div class='bulet on'>1
                     <div class="line-mid"></div>
@@ -38,7 +38,7 @@
     </div>
     <div class="second step column width100">
     <h2 class="title margin40">Depunde ideea de afacere</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -71,7 +71,7 @@
     </div>
     <div class="third step column width100">
     <h2 class="title margin40">Depunde ideea de afacere</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -103,7 +103,7 @@
     </div>
     <div class="four step column width100">
     <h2 class="title margin40">Resurse umane</h2>
-        <!-- <div class="row row-up width100 margin60">
+        <!-- <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div class='bulet'>4</div>
                 <span>Administrator</span>
@@ -118,7 +118,7 @@
         <div style='max-width: 560px;' class="row row-up width100 margin40">
             <div class="bulet-container column">
                 <div class='bulet on'>4
-                    <div class="line-mid"></div>
+                    <div class="line-mid one"></div>
                 </div>
                 <span>Administrator</span>
                 <div class="line-oriz on"></div>
@@ -150,7 +150,7 @@
         <div style='max-width: 560px;' class="row row-up width100 margin40">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
-                    <div class="line-mid"></div>
+                    <div class="line-mid one"></div>
                 </div>
                 <span>Administrator</span>
                 <div class="line-oriz"></div>
@@ -196,7 +196,7 @@
         <div style='max-width: 640px;' class="row row-up width100 margin40">
             <div class="bulet-container column">
                 <div class='bulet on'>4
-                    <div style='left: 176px; width: 260px' class="line-mid"></div>
+                    <div style='left: 176px; width: 260px' class="line-mid one"></div>
                 </div>
                 <span>Alocare bugetului</span>
                 <div class="line-oriz on"></div>
@@ -244,7 +244,7 @@
         <div style='max-width: 640px;' class="row row-up width100 margin40">
             <div class="bulet-container column">
             <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
-                    <div style='left: 176px; width: 260px' class="line-mid"></div>
+                    <div style='left: 176px; width: 260px' class="line-mid one"></div>
                 </div>
                 <span>Alocare bugetului</span>
                 <div class="line-oriz"></div>
@@ -266,7 +266,7 @@
     </div>
     <div class="eight step column width100">
         <h2 class="title margin40">Analiza pieței</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div class='bulet on'>1
                     <div class="line-mid"></div>
@@ -299,7 +299,7 @@
     </div>
     <div class="ten step column width100">
         <h2 class="title margin40">Analiza pieței</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -333,7 +333,7 @@
     </div>
     <div class="eleven step column width100">
         <h2 class="title margin40">Analiza pieței</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -370,7 +370,7 @@
     </div>
     <div class="twelve step column width100">
         <h2 class="title margin40">Analiza pieței</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -391,12 +391,12 @@
                 <div class="line-oriz"></div>
             </div>
         </div>
-        <h2 class="title margin40">Felicitări, planul tău tău <span class="blue-color">a fost depus cu succes</span></h1>
+        <h2 class="title margin40">Felicitări, planul tău <span class="blue-color">a fost depus cu succes</span></h1>
         <h4 style='max-width: 700px;' class='description margin60'>Te vom anunța cu privire la răspunsul investitorilor</h4>
         <!-- <div class="error-11 with100"></div> -->
-        <div class="box-nav row">
-            <a href='depune-ideea.php' class="nav-link not mr20 row blue-btn">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
-            <a href='cont-completat.php' class="blue-btn dark">Contul meu</a>
+        <div class="box-nav width100 row">
+            <a href='depune-ideea.php' class="nav-link big-text not mr20 row blue-btn">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
+            <a href='cont-completat.php' class="blue-btn big-text dark">Contul meu</a>
         </div>
     </div>
 </section>

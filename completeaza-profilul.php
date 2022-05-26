@@ -5,7 +5,7 @@
 <section class="depune not-fullscreen flex column header-element">
     <div class="first column width100">
         <h1 class="title margin40">Completează-ți profilul</h1>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div class='bulet on'>1
                     <div class="line-mid"></div>
@@ -27,7 +27,7 @@
                 <div class="line-oriz"></div>
             </div>
         </div>
-        <div class="column minw420 margin30">
+        <div class="column minw420 width100 margin30">
             <h3 class="sub-title">Adaugă datele tale de contact</h3>
             <h4 class="description margin20 blue-color">Toate câmpurile sunt obligatorii</h4>
             <select id='judete' class='login-input margin20' name="judete">
@@ -347,11 +347,12 @@
             </select>
             <textarea id='adresa' type="text" name="adresa" placeholder="Adresă" class="login-input" required></textarea>
         </div>
+        <div class="error-1 with100"></div>
         <buton class="blue-btn continue-btn">Continuă</buton>
     </div>
     <div class="second column width100">
         <h2 class="title margin40">Completează-ți profilul</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -395,17 +396,18 @@
             <span class='sub-description margin50 width100'>De asemenea, accepți <a href="#" class='underline'>Termenii și Condițiile</a></span>
             <div class="box-nav row width100">
                 <button class="blue-btn back dark">Înapoi</button>
-                <button class="blue-btn continue-sec">Continuă</button>
+                <button class="blue-btn">Continuă</button>
                 <!-- <input style='border: 0px' id="btn" class='blue-btn' type="button" value="Sau copiază link-ul de aici" /> -->
             </div>
         </div>
         <div class="second-second step column minw420">
-            <h2 class="sub-title">Adăugă cartea de identitate (față)</h2>
+            <h2 class="sub-title margin20">Adăugă cartea de identitate (față)</h2>
             <!-- <h4 class="blue-color margin40">Fă o poză cu telefonul mobil</h4> -->
             <lottie-player class='margin40 animation' src="lf30_editor_eopdqk0y.json"  speed="1" loop autoplay></lottie-player>
             <a class='sub-description underline relative blue-color margin50'>
-                <input id='poza-id' style="width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0;" type="file">
+                <input id='poza-id' style="width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0;" type="file" accept="image/*">
                 încarcă o fotografie - fără scanări sau fotocopii</a>
+            <div class="error-3 with100"></div>
             <div class="box-nav row width100">
                 <button class="blue-btn back-first-second dark">Înapoi</button>
                 <button class="blue-btn width100 ml20 continue-third-second">Continuă</button>
@@ -419,8 +421,8 @@
                 <li class='margin20'>Îndreptați camera telefonului către codul QR</li>
                 <li>Dacă nu funcționează, descărcați un scaner de cod QR din Google Play sau din App Store</li>
             </ul>
-            <div class="error with100"></div>
-<div class="box-nav row">
+            <div class="error-2 with100"></div>
+            <div class="box-nav row">
                 <button class="blue-btn back-second-second mr20 dark">Înapoi</button>
                 <button class="blue-btn continue-third mr20 dark">Continuă</button>
                 <a class='blue-btn row'>
@@ -432,7 +434,7 @@
     </div>
     <div class="third step column width100">
         <h2 class="title margin40">Completează-ți profilul</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div style='display: flex; border: 0px' class='bulet on'><img src="./static/content/icons/check-icon.svg" alt="check">
                     <div class="line-mid"></div>
@@ -453,22 +455,21 @@
                 <div class="line-oriz on"></div>
             </div>
         </div>
-        <div class="first-third column">
-            <h2 class="sub-title">Felicitări, prima parte a profilului a fost completată cu succes!</h2>
-            <h2 class="sub-title margin60">Acum poți depune o idee pe platformă</h2>
+        <div class="first-third width100 column">
+            <h2 class="sub-title text-center">Felicitări, prima parte a profilului a fost completată cu succes!</h2>
+            <h2 class="sub-title text-center margin60">Acum poți depune o idee pe platformă</h2>
             <span class='sub-description blue-color margin10'>Poți completa profilul în continuare, sau poți începe procesul de depunere al ideii.</span>
             <span class='sub-description blue-color margin50'>Un profil cât mai complet oferă credibilitate mai mare în fața investitorilor.</span>
-            <div class="error with100"></div>
-<div class="box-nav row">
-                <a href='depune-ideea.php' class="nav-link not mr20 row blue-btn">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
-                <button class="blue-btn continue-pass-two mr20">Continuă</button>
-                <button class="blue-btn continue-third dark">Contul meu</button>
+            <div class="box-nav widht100 three row">
+                <a href='depune-ideea.php' class="nav-link not big-text mr20 row blue-btn">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
+                <button class="blue-btn continue-pass-two big-text mr20">Continuă</button>
+                <button class="blue-btn continue-third bix-text dark">Contul meu</button>
             </div>
         </div>
     </div>
     <div class="first-two step column width100">
         <h2 class="title margin40">Completează-ți profilul</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div class='bulet on'>4
                     <div class="line-mid"></div>
@@ -492,7 +493,7 @@
         </div>
         <div class="column-left minw420 margin30">
             <div class="box-docs relative margin40 row-left">
-                <input id='poza-profil' style="width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0;" type="file">
+                <input id='poza-profil' style="width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0;" type="file" accept="image/*">
                 <img class='icon' src="./static/content/icons/portrait-canva.svg" alt="map-marker">
                 <div class="column-left">
                     <h3 class="sub-title">Adaugă poza de profil</h3>
@@ -522,6 +523,7 @@
             </div>
             <input id='citat' type="text" name="citat" placeholder="Un citat favorit*" class="login-input" required />
         </div>
+        <div class="error-4 with100"></div>
         <buton class="blue-btn continue-btn-two">Continuă</buton>
     </div>
     <div class="second-two step box-entire column width100">
@@ -576,8 +578,8 @@
                 <span class="checkmark"></span>
             </label> -->
         </div>
-        <div class="error with100"></div>
-<div class="box-nav row">
+        <div class="error-5 with100"></div>
+        <div class="box-nav row">
             <button class="blue-btn mr20 back-first dark">Înapoi</button>
             <buton class="blue-btn top-auto continue-btn-third">Continuă</buton>
         </div>
@@ -632,13 +634,13 @@
         <div class="column">
             <label class="container margin30">
                 <span class="sub-title description input-span">Nu am experiență profesională</span>
-                <input class='radio' type="radio" name="termeni">
+                <input class='radio' id='eu' type="radio" name="termeni">
                 <span class="checkmark"></span>
             </label>
-            <div class="error with100"></div>
-<div class="box-nav row">
+            <div class="error-6 with100"></div>
+            <div class="box-nav row">
                 <button class="blue-btn mr20 back-second dark">Înapoi</button>
-                <button class="blue-btn">Finalizare</button>
+                <button class="blue-btn finalizare">Finalizare</button>
             </div>
         </div>
     </div>
@@ -891,6 +893,7 @@
                 </select>
             </div>
         </div>
+        <div class="error-study with100"></div>
         <button id='get-study' class="save save-btn close-btn blue-btn">Salvează</button>
     </div>
 </div>
@@ -1176,6 +1179,7 @@
                 </div>
             </div>
         </div>
+        <div class="error-exp with100"></div>
         <button id='get-experience' class="save save-btn-experienta close-btn blue-btn">Salvează</button>
     </div>
 </div>
@@ -1189,7 +1193,7 @@ $(document).ready(function(){
 $('.continue-btn-two').click(function() {
     // if ($('#judete').val() == 0 && $('#oras').val() == 0 && $('#adresa').val().length === 0) {input-hobby
     if ($('#zi').val() == "none" || $('#luna').val() == "none" || $('#an').val().length == 0 || $('#limba').val() == 0 || $('#nivel').val() == 0 || $('#input-hobby').val().lenght == 0 || $('#citat').val().length == 0) {
-        $('.error').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
+        $('.error-4').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
     } else {
         $(".first-two").hide();
         $(".second-two").css('display', 'flex');
@@ -1199,7 +1203,7 @@ $('.continue-btn-two').click(function() {
 // continue-btn-third
 $('.continue-btn-third').click(function() {
     if ($('#numele-institutiei').val() == "none" || $('#calificare').val() == "none" || $('#localitate').val() == 0 || $('#tari').val() == 0 || $('#date-inceput').val() == 0 || $('#date-sfarsit').val() == 0) {
-        $('.error').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
+        $('.error-5').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
     } else {
         $(".second-two").hide();
         $(".third-two").css('display', 'flex');
@@ -1239,7 +1243,7 @@ $(document).ready(function(){
     });
     $('.save-btn-experienta').click(function() {
         if ($('#post-ocupat').val() == "none" || $('#firma-lucrat').val() == "none" || $('#localitate-experienta').val() == 0 || $('#tari-experienta').val() == 0 || $('#luna-inceput-experienta').val() == 0 || $('#date-inceput-experienta').val() == 0 || $('#date-sfarsit-experienta').val() == 0 || $('#luna-sfarsit-experienta').val() == 0) {
-            $('.error').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
+            $('.error-experience').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
         } else {
             window.location.href = "cont-completat.php";
         }
@@ -1330,7 +1334,7 @@ $(document).ready(function(){
 $('.continue-btn').click(function() {
     // if ($('#judete').val() == 0 && $('#oras').val() == 0 && $('#adresa').val().length === 0) {
     if ($('#judete').val() == "none" || $('#oras').val() == "none" || $('#adresa').val().length == 0) {
-        $('.error').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
+        $('.error-1').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
     } else {
         $(".first").hide();
         $(".second").css('display', 'flex');
@@ -1340,7 +1344,7 @@ $('.continue-btn').click(function() {
 $('.continue-third-second').click(function() {
     // if ($('#judete').val() == 0 && $('#oras').val() == 0 && $('#adresa').val().length === 0) {
     if ($('#poza-id').val() == 0) {
-        alert('Incarcă o poza!');
+        $('.error-3').append("<p class='sub-title margin30 color-red'>Încarcă o poza!</p>");
     } else {
         $(".second").css('display', 'none');
         $(".third").css('display', 'flex');
@@ -1365,6 +1369,16 @@ $(".back-first-second").click(function(){
 $(".back-second-second").click(function(){
     $(".third-second").css('display', 'none');
     $(".second-second").css('display', 'flex');
+})
+
+$('.finalizare').click(function() {
+    if ($('#eu').is(':checked')) {
+        window.location.href = 'cont-completat.php';
+    } else if ($('#post-ocupat').val() == 0 || $('#firma-lucrat').val() == 0 || $('#localitate-experienta').val() == 0 || $('#tari-experienta').val() == 0 || $('#luna-inceput-experienta').val() == 0 || $('#date-inceput-experienta').val() == 0 || $('#luna-sfarsit-experienta').val() == 0 || $('#date-sfarsit-experienta').val() == 0 ) {
+        $('.error-4').append("<p class='sub-title margin30 color-red'>Toate câmpurile sunt obligatorii</p>");
+    } else {
+        window.location.href = 'cont-completat.php';
+    }
 })
 
 // $(".continue-third").click(function(){

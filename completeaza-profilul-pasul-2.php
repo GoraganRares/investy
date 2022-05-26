@@ -5,7 +5,7 @@
 <section class="depune not-fullscreen flex column header-element">
     <div class="first column width100">
         <h2 class="title margin40">Completează-ți profilul</h2>
-        <div class="row row-up width100 margin60">
+        <div class="box-bullet row row-up width100 margin60">
             <div class="bulet-container column">
                 <div class='bulet on'>4
                     <div class="line-mid"></div>
@@ -29,7 +29,7 @@
         </div>
         <div class="column-left minw420 margin30">
             <div class="box-docs relative margin40 row-left">
-                <input id='poza-profil' style="width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0;" type="file">
+                <input id='poza-profil' style="width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0;" type="file" accept="image/*">
                 <img class='icon' src="./static/content/icons/portrait-canva.svg" alt="map-marker">
                 <div class="column-left">
                     <h3 class="sub-title">Adaugă poza de profil</h3>

@@ -108,7 +108,7 @@
                                 </div>
                                 <div class="relative row pointer">
                                     <img class='icon' src="./static/content/icons/portrait.svg" alt="portrait">
-                                    <input id='poza-profil' style="width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0;" type="file">
+                                    <input id='poza-profil' style="width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0;" type="file" accept="image/*">
                                     <a class='description blue-color'>Editează poza de profil</a>
                                 </div>
                             </div>
