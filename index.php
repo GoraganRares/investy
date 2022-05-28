@@ -107,7 +107,7 @@ Aici până și cea mai mică idee de afacere poate deveni realitate, chiar dac�
     </div>
 </section>
 
-<section class="blog-container padding-all not-fullscreen">
+<!-- <section class="blog-container padding-all not-fullscreen">
     <div class="box-subtitle width100 margin30 row-left show">
         <div class="line"></div>
         <h2 class="sub-title">Noutăți</h2>
@@ -150,7 +150,7 @@ Aici până și cea mai mică idee de afacere poate deveni realitate, chiar dac�
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <?php require_once "design/footer.php"; ?>
 <script>
 $(".owl-carousel").owlCarousel({

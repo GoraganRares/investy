@@ -2,7 +2,7 @@
     <div class="footer-up margin40 flex row">
         <div class="column-left ">
             <a href="" class="margin10"><img src="static/content/icons/logo.svg" alt=""></a>
-            <a class="info black-color margin20 flex row fw600" target="_blank"  href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo diam. Curabitur tincidunt vulputate pulvinar.</a>
+            <!-- <a class="info black-color margin20 flex row fw600" target="_blank"  href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo diam. Curabitur tincidunt vulputate pulvinar.</a> -->
         </div>
         <div>
             <h4>Informații</h4>

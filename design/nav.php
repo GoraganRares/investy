@@ -55,7 +55,7 @@
                         if ( !isset($_COOKIE['user']) ) {
                         
                         ?>                    
-                        <a href='login-register.php' class="nav-link not row blue-btn white-color phone">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
+                        <a href='depune-ideea.php' class="nav-link not row blue-btn white-color phone">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
 
                         <?php } else { ?>
                         <a href='depune-ideea.php' class="nav-link not row blue-btn white-color phone">Depune ideea aici <img src="static/content/icons/edit.svg" alt="Depunde ideea"></a>
