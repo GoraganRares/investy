@@ -254,7 +254,8 @@ svg.icons path{
 /* STATISTICS =================================================== */
 .statistics .row .column span {font-size: 20px; color: #00234A; text-align: center;}
 .statistics .row .column .numbers {font-size: 55px; color: #00234A;}
-.statistics .row .column .numbers span{color: #0080FF; font-size: 55px;}
+// .statistics .row .column .numbers span{color: #0080FF; font-size: 55px;}
+.statistics .row .column .row-left .plus {color: #0080FF; font-size: 55px;}
 .statistics .row {justify-content: space-around;}
 
 /* HOW =================================================== */
@@ -289,8 +290,9 @@ svg.icons path{
 .owl-theme .owl-nav [class*='owl-']:hover {background-color: transparent; color: #0080FF;}
 
 /* INVESTITIE =================================================== */
+.investitie.column {align-items: flex-start;}
 .box-video {position: relative;}
-.box-video img:last-child {position: absolute; z-index: 99; cursor: pointer; top: 50%;transform: translate(-50%, -50%);  left: 50%; height: 70px; width: 70px;}
+// .box-video img:last-child {position: absolute; z-index: 99; cursor: pointer; top: 50%;transform: translate(-50%, -50%);  left: 50%; height: 70px; width: 70px;}
 
 /* BLOG =================================================== */
 .blog {min-height: 45vh; background: url("../content/blog.webp");}

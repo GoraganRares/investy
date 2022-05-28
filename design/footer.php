@@ -28,16 +28,16 @@
             <ul class="nav-list">
                 <div class="flex column">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Acasă</a>
+                        <a href="index.php" class="nav-link">Acasă</a>
                     </li>
                     <li class="nav-item">
-                        <a href='#' class="nav-link">Cum funcționează?</a>
+                        <a href='cum-functioneaza.php' class="nav-link">Cum funcționează?</a>
                     </li>
                     <li class="nav-item">
-                        <a href='#' class="nav-link">Povești de succes</a>
+                        <a href='povesti-de-succes.php' class="nav-link">Povești de succes</a>
                     </li>
                     <li class="nav-item">
-                        <a href='#' class="nav-link">Depune ideea</a>
+                        <a href='depune-ideea.php' class="nav-link">Depune ideea</a>
                     </li>
                 </div> 
             </ul>
@@ -47,14 +47,14 @@
             <ul class="nav-list">
                 <div class="flex column">
                     <li class="nav-item">
-                        <a  class="info flex row" target="_blank"  href="mailto:scagrementsport@yahoo.ro">exemplu@cereal.com</a>
+                        <a  class="info flex row" target="_blank"  href="mailto:office@investy.ro">office@investy.ro</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a  class="info flex row" target="_blank"  href="https://www.google.com/maps?q=pucioasa&rlz=1C1GCEA_enRO932RO932&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj_sI3e8Nn0AhVcg_0HHYr6APYQ_AUoAXoECAEQAw">București, Romania</a>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <!-- <li class="nav-item">
                         <a  class="info flex row" target="_blank"  href="tel:0763590027">0724 816 181</a>
-                    </li>
+                    </li> -->
                 </div> 
             </ul>
         </div>

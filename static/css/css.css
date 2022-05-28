@@ -1150,7 +1150,7 @@ svg.icons path {
   color: #00234A;
 }
 
-.statistics .row .column .numbers span {
+.statistics .row .column .row-left .plus {
   color: #0080FF;
   font-size: 55px;
 }
@@ -1306,20 +1306,14 @@ svg.icons path {
 }
 
 /* INVESTITIE =================================================== */
-.box-video {
-  position: relative;
+.investitie.column {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.box-video img:last-child {
-  position: absolute;
-  z-index: 99;
-  cursor: pointer;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 50%;
-  height: 70px;
-  width: 70px;
+.box-video {
+  position: relative;
 }
 
 /* BLOG =================================================== */

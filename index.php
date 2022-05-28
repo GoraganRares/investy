@@ -22,23 +22,60 @@ start-up, indiferent de experiența ta în business.</p>
         <img class="cutie" src="./static/content/header-img.webp" alt="header-img"/>
     </div>
 </header>
-
-<section class="statistics padding-all not-fullscreen">
+<!-- <section id="inview-example" class="statistics padding-all not-fullscreen">
+    <div class="row common-box">
+        <div id='numbers' class="column counter-num">
+            <div class="row-left">
+                <span data-count="175" class="numbers timer fig-number fw600">0</span>
+                <span class="plus yellow-color">+</span>
+            </div>
+            <span class="blue-color">Proiecte finalizate</span>
+        </div>
+        <div class="column">
+            <div class="row-left">
+                <span data-count="10" class="numbers timer fig-number fw600">0</span>
+                <span class="plus green-color">+</span>
+            </div>
+            <span class="blue-color">Creatori de idei</span>
+        </div>
+        <div class="column">
+            <div class="row-left">
+                <span data-count="100" class="numbers timer fig-number fw600">0</span>
+                <span class="plus purple-color">+</span>
+            </div>
+            <span class="blue-color">Clienți mulțumiți</span>
+        </div>
+    </div>
+    <div class="line"></div>
+</section> -->
+<section id="inview-example" class="statistics padding-all not-fullscreen">
     <div class="row margin60">
         <div class="column">
-            <span class="numbers fw600">75<span class="orange-color numbers">+</span></span>
+            <div class="row-left">
+                <span data-count="75" class="numbers timer fw600">75</span>
+                <span class="plus">+</span>
+            </div>
             <span>Antreprenori finanțați</span>
         </div>
         <div class="column">
-            <span class="numbers fw600">1mil€<span>+</span></span>
+            <div class="row-left">
+                <span class="numbers timer fw600">1mil</span>
+                <span class="plus">€</span>
+            </div>
             <span>Atrași în investiții pentru firme</span>
         </div>
         <div class="column">
-            <span class="numbers fw600">150<span>+</span></span>
+            <div class="row-left">
+                <span data-count="150" class="numbers timer fw600">150</span>
+                <span class="plus">+</span>
+            </div>
             <span>Investitori pregătiți</span>
         </div>
         <div class="column">
-            <span class="numbers fw600">200<span>€</span></span>
+            <div class="row-left">
+                <span data-count="200" class="numbers timer fw600">200</span>
+                <span class="plus">+</span>
+            </div>
             <span>Firme partenere Investy</span>
         </div>
     </div>
@@ -53,13 +90,13 @@ start-up, indiferent de experiența ta în business.</p>
         </div>
         <h3 class="title margin30 max-width700">Ajutăm antreprenorii <span class="blue-color"> să obțină finanțare </span>de la investitori privați</h3>
         <p class="description margin30">Crezi că ai nevoie de o idee strălucită sau inovativă pentru a obține finanțare? Nici pe
-departe!
-95% din ideile strălucite sau inovative reprezintă un risc mare de pierdere a banilor.
-Investitorii preferă să-și blocheze banii în idei de afaceri care există de ceva timp pe piața
-din România și care s-au dovedit a fi foarte eficiente și profitabile de-a lungul timpului.
-Aici până și cea mai mică idee de afacere poate deveni realitate, chiar dacă nu ai experiență
-în business și ești la început de drum.
-</p>
+            departe!
+            95% din ideile strălucite sau inovative reprezintă un risc mare de pierdere a banilor.
+            Investitorii preferă să-și blocheze banii în idei de afaceri care există de ceva timp pe piața
+            din România și care s-au dovedit a fi foarte eficiente și profitabile de-a lungul timpului.
+            Aici până și cea mai mică idee de afacere poate deveni realitate, chiar dacă nu ai experiență
+            în business și ești la început de drum.
+        </p>
         <a href="cum-functioneaza.php" class="blue-btn">Cum funcționează</a>
     </div>
     <div class="right-container">
@@ -152,6 +189,34 @@ Aici până și cea mai mică idee de afacere poate deveni realitate, chiar dac�
     </div>
 </section> -->
 <?php require_once "design/footer.php"; ?>
+<script type="text/javascript">
+function inviewExample() {
+    var $example = $('#inview-example');
+    var inview;
+
+    if ($example.length) {
+    inview = new Waypoint.Inview({
+        element: $('#inview-example')[0],
+        entered: function(direction) {
+            $('.timer').each(function () {
+            var $this = $(this);
+            var val = $(this).data('count');
+            jQuery({ Counter: 0 }).animate({ Counter: val }, {
+                duration: 1000,
+                easing: 'swing',
+                step: function () {
+                $this.text(Math.ceil(this.Counter));
+                }
+            });
+            });
+        }
+    })
+    }
+}
+$(window).on('load', function() {
+	inviewExample();
+});
+</script>
 <script>
 $(".owl-carousel").owlCarousel({
     loop:false,
